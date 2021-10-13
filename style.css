@@ -1,0 +1,480 @@
+/* CSS do primeiro infográfico */ 
+@font-face {
+    font-family: "Segoe UI";
+    src: url("WP-vscode1/segoeui.ttf");
+}
+#fundo{
+background-image: url("background-relogio.svg");
+background-repeat: repeat-y;
+}
+.principal{
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+width: 85%;
+margin: 0 auto;
+padding-bottom: 5%;
+}
+.sw-h1{
+font-family: heebo;
+font-weight: bold;
+}
+.sw-paragrafo{ 
+color: #161321 ;
+padding-right: 3%;
+padding-left: 3%;
+font-family: 'Segoe UI', heebo;
+opacity: 0;
+    animation-name:  sw-paragrafo;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out; 
+}
+.sw-h3{
+font-family: heebo;
+font-weight: bold;
+color: white;
+padding-top: 3%;
+opacity: 0;
+    animation-name: h3-sw;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out; 
+}
+.container-a-vermelho{
+background-color: #e31b23;
+color: white;
+padding: 2%;
+}
+@keyframes cabeçalho{
+0% {
+opacity: 0;
+
+}
+10% {
+opacity: 1;  
+}
+15% {
+transform: translateY(0%);
+}
+25%{
+transform: translateY(400%);
+}
+35%{
+transform: translateY(0%);
+}
+}
+@keyframes sw-h1{
+25% {
+
+opacity: 0;
+}
+30% {
+opacity: 1;
+}
+100%{
+opacity: 1;
+}
+}
+
+.sw-h1{     opacity: 0;
+animation-name: sw-h1;
+animation-duration: 8s;
+animation-fill-mode: forwards;
+}
+.paleta{
+width: 30%;
+height: 30%;
+}
+.container-paleta{
+width: 70%;
+height: 30%;
+animation-name: cabeçalho;
+animation-duration: 6s;
+animation-timing-function: ease-in;
+}
+.p-vermelho-container{
+background-color: white;
+color:#161321 ;
+padding: 1%;
+border-radius: 1rem;
+opacity: 0;
+animation-name: caixa-branca;
+animation-duration: 3s;
+animation-delay: 3s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out; 
+}
+@keyframes caixa-branca{
+0% {
+opacity: 0;
+        }
+20%{
+opacity: 1;        
+}
+100%{
+opacity: 1;
+}
+}
+.scrum-kanban-sprint{
+background-color: white;
+display: flex;
+margin-bottom: 3%;
+}
+.chumbo-circulo{
+width: 7%;
+}
+.indice{
+background-color: white;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+align-items: center;
+justify-items: center;   
+width: 100%; 
+}
+.container-txt-indice{
+display: flex;
+flex-direction: column;
+position: relative;
+margin-top: 3%;
+}
+.p-indice{
+position: relative;
+left: 0 auto;
+font-size: 1.3rem;
+color: black;
+border-top-right-radius: 1rem;
+border-bottom-right-radius: 1rem;
+opacity: 0;
+animation-name:p-indice;
+animation-duration: 3s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+margin-left: 5%;
+}
+@keyframes p-indice{
+0% {   
+opacity: 0;
+transform: translateY(-200%);
+}
+100%{
+opacity: 1;
+transform: translateY(100%);
+}
+}
+@keyframes sw-paragrafo{
+0% {   
+opacity: 0;
+
+}
+100%{
+opacity: 1;
+
+}
+}
+@keyframes h3-sw {
+0% {   
+opacity: 0;
+transform: translateY(-80%);
+}
+100%{
+opacity: 1;
+transform: translateY(0%);
+}
+}
+.clique-em-um{
+position: relative;
+text-align: center;
+justify-items: center;
+font-size: 0.8rem;
+opacity: 0;
+animation-name: txt-indice;
+animation-duration: 3s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+@keyframes txt-indice{
+0% {
+
+opacity: 0;
+}
+100%{
+opacity: 1;
+}
+}
+.chumbo{
+background-color: #333029;
+display: flex;
+align-items: center;
+justify-items: center;
+text-align: center;
+width: 5rem;
+height: 5rem;
+border-radius: 4rem;
+cursor: pointer;
+box-shadow: 1px 1px 3px #535353;
+margin-left: 3rem;
+margin-right: 3rem;
+transform: scale(0 , 0);
+animation-name: azul; 
+animation-duration: 2s;
+box-shadow: 1px 1px 3px #535353;
+animation-name: pb;
+animation-duration: 3s;
+animation-delay: 2.5s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+@keyframes pb{
+0%{
+transform: scale(0 , 0);
+}
+20%{
+transform: scale(1.3 , 1.3);
+
+}
+35% {
+transform: scale(1 , 1);
+}
+100% {
+transform: scale(1 , 1);
+}
+}
+.chumbo:hover{
+font-size: 1.3rem;
+background-color: #1d1b17;
+box-shadow: 5px 5px 5px #535353;
+
+}
+.amarelo{
+background-color: #ffc000;
+display: flex;
+align-items: center;
+justify-items: center;
+text-align: center;
+padding: 0 auto;
+width: 5rem;
+height: 5rem;
+border-radius: 4rem;
+cursor: pointer;
+box-shadow: 1px 1px 3px #535353;
+transform: scale(0 , 0);
+animation-name: azul; 
+animation-duration: 2s;
+box-shadow: 1px 1px 3px #535353;
+animation-name: yellow;
+animation-duration: 3s;
+animation-delay: 3s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+@keyframes yellow{
+0%{
+transform: scale(0 , 0);
+}
+20%{
+transform: scale(1.3 , 1.3);
+
+}
+35% {
+transform: scale(1 , 1);
+}
+100% {
+transform: scale(1 , 1);
+}
+}
+.amarelo:hover{
+font-size: 1.2rem;
+background-color: #fda500;
+box-shadow: 5px 5px 5px #535353;
+}
+.azul{
+background-color: #30affc;
+display: flex;
+align-items: center;
+justify-items: center;
+text-align: center;
+width: 5rem;
+height: 5rem;
+border-radius: 4rem;
+text-decoration: none;
+cursor: pointer;
+scroll-behavior: smooth;
+transform: scale(0 , 0);
+animation-name: azul; 
+animation-duration: 2s;
+box-shadow: 1px 1px 3px #535353;
+animation-name: blue;
+animation-duration: 3s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+.azul:hover{
+font-size: 1.3rem;
+box-shadow: 5px 5px 5px #535353;
+background-color: #109af0;
+}
+@keyframes blue{
+0%{
+transform: scale(0 , 0);
+}
+20%{
+transform: scale(1.3 , 1.3);
+
+}
+35% {
+transform: scale(1 , 1);
+}
+100% {
+transform: scale(1 , 1);
+}
+}
+.scrum{
+background-color: white;
+}
+.img-scrum{
+width: 70%;
+position: relative;
+margin: 0 auto;
+}
+.kanban{
+background-color: white;
+display: flex;
+flex-direction: column;
+}
+.sprint{
+background-color: white;
+}
+.container-img-sprint{
+display: flex;
+justify-items: center;
+align-items: center;
+margin: 0 auto;
+width: 80%;
+margin-top: 4%;
+transform: scale(0 , 0);
+animation-name: azul; 
+animation-duration: 2s;
+animation-name: desenho;
+animation-duration: 4s;
+animation-delay: 6s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+@keyframes desenho{
+0%{
+transform: scale(0 , 0);
+}
+50%{
+transform: scale(1.1 , 1.1);
+
+}
+80% {
+transform: scale(1 , 1);
+}
+100% {
+transform: scale(1 , 1);
+}
+}
+.img-sprint{
+margin: 0 auto;
+width: 90%;
+}
+.container-img-scrum{
+display: flex;
+justify-items: center;
+align-items: center;
+margin: 0 auto;
+width: 80%;
+margin-top: 2%;
+transform: scale(0 , 0);
+animation-name: azul; 
+animation-duration: 2s;
+animation-name: desenho;
+animation-duration: 4s;
+animation-delay: 6s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+.img-fluid atto_image_button_middle{
+margin: 0 auto;
+display: flex;
+justify-items: center;
+align-items: center;
+}
+.img-scrum{
+width: 65%;
+text-align: center;
+justify-items: center;
+align-items: center;
+margin: 0 auto;
+}
+.container-img-kanban{
+display: flex;
+justify-items: center;
+align-items: center;
+margin: 0 auto;
+width: 75%;
+margin-top: 2%;
+transform: scale(0 , 0);
+animation-name: azul; 
+animation-duration: 2s;
+animation-name: desenho;
+animation-duration: 4s;
+animation-delay: 6s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+position: relative;
+}
+.atto_image_button_text-bottom{
+margin: 0 auto;
+display: flex;
+justify-items: center;
+align-items: center;
+}
+.img-kanban{
+width: 60%;
+text-align: center;
+justify-items: center;
+align-items: center;
+margin: 0 auto;
+}
+.hr {
+width: 0%;
+animation-name: hr;
+animation-duration: 2s;
+animation-delay: 4.8s;
+animation-fill-mode: forwards;
+}
+@keyframes hr {
+from {
+width: 0%;
+}
+to {
+width: 70%;
+}
+}
+.container-personagem{
+padding-top: 7%;
+margin: 0 auto;
+width: 70%;
+transform: scale(0 , 0);
+animation-name: azul; 
+animation-duration: 2s;
+animation-name: desenho;
+animation-duration: 4s;
+animation-delay: 8s;
+animation-fill-mode: forwards;
+animation-timing-function: ease-in-out;
+}
+.img-fluid atto_image_button_text-bottom{
+display: flex;
+}
