@@ -1,0 +1,1 @@
+# Quais-os-principais-tipos-de-m-todos-geis-
